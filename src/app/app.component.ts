@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hello world ';
   foto = 'favicon.ico';
+  peso =0;
+  altura =0;
 
   exibir(){
     alert(this.title);
+  }
+  imc(){
+    let imc =this.peso/(this.altura*this.altura);
+    alert (imc);
   }
 }
